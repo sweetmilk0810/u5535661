@@ -1,0 +1,76 @@
+.header-class {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+#JapeneseRamen {
+    font-style: italic;
+    border: 10px 30px;
+}
+
+.word-class {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu-class {
+    font-weight: bold;
+    
+}
+
+.image-class {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.footer-class {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.openinghours-class {
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(123, 57, 18);
+    color: white;
+}
+
+.table-class {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.cells-class {
+    border: 1px solid white;
+    padding: 3px;
+    background-color: rgb(123, 57, 18);
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0px;
+}
+
+ul li {
+    flex: 1 1 35%;
+    margin: 20px;
+}
+
+ul li img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,7 @@
+#input
+name=input("Please tell me who you are?")
+print("I know, you are %s" %name)
+
+user_name = input("Please enter your username")
+user_type = input("Please enter your usertype")
+print(f"Hello {user_name}, you are a valued {user_type} user，welcome your visit")

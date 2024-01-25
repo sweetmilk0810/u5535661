@@ -42,6 +42,7 @@ elif int(input("What is the date today:"))==1:
 else:
     print("Sorry, both conditions are not met, you need to buy a ticket for ￡10.")
 
+
 age=20
 year=3
 level=1

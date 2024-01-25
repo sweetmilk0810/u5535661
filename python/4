@@ -1,0 +1,43 @@
+num1= 10
+num2= 5
+print(f"the answer of 10>5 is: {num1>num2}")
+print(f"the answer of 10<5 is: {num1<num2}")
+
+
+age=input("Please enter your age:")
+age=int(age)
+print("Welcome to the Black Horse Children's Playground, children free, adults charged.")
+if age>18:
+    print("You are an adult, you need to pay 10 yuan to play.")
+print("Have a nice play!")
+
+
+age=int(input("Please enter your age:"))
+if age>18:
+    print("You are an adult, and you need to buy ￡10 ticket.")
+else:
+    print("You are underage and can play for free.")
+
+
+height=int(input("Please enter your height(cm):"))
+vip_level=int(input("Please enter your vip_level(1-5):"))
+day=int(input("What is the date today:"))
+if height<120:
+    print("It's free for people whose height less than 120 cm.")
+elif vip_level>3:
+    print("It's free for people whose vip_level over 3.")
+elif day==1:
+    print("It's free because today is Free Day 1.")
+else:
+    print("Sorry, all conditions are not met, you need to buy a ticket for ￡10.")
+
+
+print("Welcome to the zoo.")
+if int(input("Please enter your height(cm):"))<120:
+    print("It's free for people whose height less than 120 cm.")
+elif int(input("Please enter your vip_level(1-5):"))>3:
+    print("It's free for people whose vip_level over 3.")
+elif int(input("What is the date today:"))==1:
+    print("It's free because today is Free Day 1.")
+else:
+    print("Sorry, both conditions are not met, you need to buy a ticket for ￡10.")

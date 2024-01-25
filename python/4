@@ -41,3 +41,21 @@ elif int(input("What is the date today:"))==1:
     print("It's free because today is Free Day 1.")
 else:
     print("Sorry, both conditions are not met, you need to buy a ticket for ￡10.")
+
+age=20
+year=3
+level=1
+if age>=18:
+    print("You are an adult.")
+    if age<30:
+        print("Your age meets the criteria.")
+        if year>2:
+            print("Congratulations, you meet the age and time of entry criteria to receive a gift.")
+        elif level>3:
+            print("Congratulations, you meet the age and level of entry criteria to receive a gift")
+        else:
+            print("Sorry, althouth the age meets the criteria, time of entry and level not meet the criteria.")
+    else:
+        print("Sorry, it's too old.")
+else:
+    print("Sorry, kids can't get.")

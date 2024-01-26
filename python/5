@@ -1,0 +1,26 @@
+sum=0
+num=1
+while num<=100:
+    sum+=num
+    num+=1
+print(f"sum of 1-100:{sum}")
+
+
+import random
+num=random.randint(1,100)
+count=0
+
+flag=True
+while flag:
+    guess_num=int(input("Please enter the number you guess:"))
+    count+=1
+    if guess_num==num:
+        print("Bingo!")
+        flag=False
+    else:
+        if guess_num>num:
+            print("bigger")
+        else:
+            print("smaller")
+
+print(f"Total number of count is {count}")

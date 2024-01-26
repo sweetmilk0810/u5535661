@@ -1,0 +1,17 @@
+name= "itheima is a brand of itcast"
+count=0
+
+for x in name:
+    if x=="a":
+        count+=1
+print(f"count of a is {count}")
+
+
+num=120
+count=0
+
+for x in range(1,num):
+    if x%2==0:
+        count+=1
+
+print(f"Range 1 to 120 (excluding 120), the number of even numbers is {count}")

@@ -1,0 +1,58 @@
+#Define the global variables: money and name
+money=5000000
+name=None
+
+#Enter name
+name=input("Please enter your name:")
+
+#Def query fuction
+def query (show_header):
+    if show_header:
+        print("--------Check balance--------")
+    print(f"{name}, hello, your balance is: £{money}.")
+
+#Def deposit function
+def deposit(num):
+    global money    #'global' allows 'money' to be defined as a global variable inside the function
+    money+=num
+    print("--------Deposit--------")
+    print(f"{name}, hello, you have successfully deposited £{num}.")
+    #Call the query function to query the balance
+    query(False)
+
+#Define the withdrawal function
+def withdrawal(num):
+    global money
+    money-=num
+    print("--------Withdrawal--------")
+    print(f"{name}, hello, you have successfully withdrawal £{num}.")
+    # Call the query function to query the balance
+    query(False)
+
+#Define the main menu function
+def main():
+    print("--------Mainmenu--------")
+    print(f"{name}, Welcome to BlackHorse Bank ATM. Please choose:")
+    print("Check balance\t[Enter 1]")
+    print("Deposit\t\t\t[Enter 2]")
+    print("Withdrawal\t\t[Enter 3]")    #Align the output with the \t TAB
+    print("Exit\t\t\t[Enter 4]")
+    return input("Please enter your choice:")
+
+#Set the wireless loop to ensure that the program does not quit
+while True:
+    keyboard_input=main()
+    if keyboard_input=="1":
+        query(True)
+        continue    #By 'continue' to continue the next loop, you are back to the main menu
+    elif keyboard_input=="2":
+        num=int(input("How much money do you want to deposit? Please enter:"))
+        deposit(num)
+        continue
+    elif keyboard_input=="3":
+        num = int(input("How much money do you want to withdrawal? Please enter:"))
+        withdrawal(num)
+        continue
+    else:
+        print("Goodbye.")
+        break    #Exit the loop by 'break'
